@@ -1,3 +1,15 @@
-#message
-    h1 Hello World 
-    h3 pug's in the house
+doctype html
+html
+    head
+        title="Test"
+        link(rel='stylesheet', href='/style.css')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        meta(name='viewport' content='windth=device-width, initial-scale=1')
+    body
+        header.row.p-2
+            .col-auto=firstname
+        main.row.p-2
+            .col-6="test"
+            .col-6="test2"
+    script(src='scripts.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js')

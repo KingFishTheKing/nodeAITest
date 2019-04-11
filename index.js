@@ -3,10 +3,12 @@
 const tf = require('@tensorflow/tfjs-node')
 const express = require('express')
 const app = express();
-app.locals.title = 'My test ai';
 app.set('view engine', 'pug');
+app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
-    res.render('index');
+    res.render('index', {
+        firstname: 'Yoram'
+    });
 })
 
 app.listen(3000, () => {
